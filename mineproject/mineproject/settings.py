@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 EXTERNAL_APPS = [
     'home',
 ]
+INSTALLED_APPS += EXTERNAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
