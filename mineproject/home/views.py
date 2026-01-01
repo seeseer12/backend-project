@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from .models import Shishir
 
 
 peoples=[{"name":"shreeram","age":17,"city":"dhaka"},
@@ -19,3 +19,28 @@ def about(request):
 
 def contact(request):
     return render(request, "htmls/contact.html")
+# home/views.py
+
+
+def create_shishir(request):
+    if request.method == "POST":
+        # Get data from form
+        name = request.POST.get("name")
+        age = request.POST.get("age")
+        city = request.POST.get("city")
+        phone = request.POST.get("phone")
+        email = request.POST.get("email")
+
+        # Create object in DB
+        Shishir.objects.create(
+            name=name,
+            age=int(age),
+            city=city,
+            phone=int(phone),
+            email=email
+        )
+
+        return HttpResponse(f"Shishir {name} created successfully!")
+
+    # For GET requests, show a simple form
+    return render(request, "htmls/form.html")

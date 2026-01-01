@@ -23,5 +23,6 @@ from django.urls import path, include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("home.urls")),  # connect app urls
+    path("home/", include("home.urls")),
 ]
 
