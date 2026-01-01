@@ -3,8 +3,8 @@ from django.http import HttpResponse
 
 
 
-peoples=[{"name":"shishir","age":22,"city":"dhaka"},
-    {"name":"shishir","age":22,"city":"dhaka"},
+peoples=[{"name":"shreeram","age":17,"city":"dhaka"},
+    {"name":"shishir","age":12,"city":"dhaka"},
     {"name":"ram","age":25,"city":"kathmandu"},
     {"name":"sita","age":18,"city":"pokhara"},
     {"name":"gita","age":20,"city":"biratnagar"},
@@ -12,7 +12,7 @@ peoples=[{"name":"shishir","age":22,"city":"dhaka"},
 
 # Create your views here.
 def home(request):
-    return render(request, "htmls/index.html",context={"peoples":peoples})
+    return render(request, "htmls/index.html",context={"peoples":peoples,"shishir":"developer"})
 
 def about(request):
     return render(request, "htmls/about.html")

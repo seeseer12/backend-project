@@ -1,15 +1,12 @@
+{% extends 'base.html' %}
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django tutorial</title>
-</head>
-<body>
-  <!DOCTYPE html>
-<html>
+
+
+{% block title %} index page {% endblock %}
+
+{% block content %}
+
 <head>
     <title>Voter Table</title>
     <style>
@@ -49,5 +46,10 @@
     {% endfor %}
 </table>
 
+
+
+   shishir is a {{shishir}}  
+
+{% endblock %}
 <!-- {{peoples}} -->
 
