@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #fffaf4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #ff6b35;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 50px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text span {
+    color: #ff6b35;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.hero-text button {
+    padding: 12px 30px;
+    background: #ff6b35;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background: #e85a2a;
+}
+
+.hero-img img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Recipes */
+.recipes {
+    text-align: center;
+    padding: 60px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* About */
+.about {
+    background: #fff0e6;
+    padding: 60px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #ff6b35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

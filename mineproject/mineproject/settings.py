@@ -43,7 +43,9 @@ INSTALLED_APPS = [
 
 EXTERNAL_APPS = [
     'home',
+    'vegies',
 ]
+
 INSTALLED_APPS += EXTERNAL_APPS
 
 MIDDLEWARE = [

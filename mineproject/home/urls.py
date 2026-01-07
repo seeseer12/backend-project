@@ -10,3 +10,4 @@ urlpatterns = [
     path("contact/", views.contact, name="contact"),
     path("create/", views.create_shishir, name="create_shishir"),
 ]
+
